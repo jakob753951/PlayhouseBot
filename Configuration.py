@@ -8,7 +8,7 @@ class Configuration:
 		self.description = description
 		self.name = name
 		self.initial_cogs = initial_cogs
-		self.servers = servers
+		self.servers = {}
 		for key, value in servers.items():
 			fields = ['cate_personal_vc', 'chan_personal_vc', 'chan_message_log', 'chan_member_log']
 			args = [value[field] for field in fields]

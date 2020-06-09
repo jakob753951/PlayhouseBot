@@ -23,7 +23,7 @@ class Configuration:
 		for field in general:
 			cfg_file.write(f'\t\tself.{field} = {field}\n')
 
-		cfg_file.write(f'\t\tself.servers = servers\n')
+		cfg_file.write('\t\tself.servers = {}\n')
 
 		cfg_file.write(f"""\t\tfor key, value in servers.items():
 			fields = [{", ".join(["'" + f + "'" for f in server])}]
