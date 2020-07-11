@@ -2,11 +2,11 @@ import asyncio
 from datetime import datetime
 import discord
 from discord.ext import commands
-from configuration import *
-from server_cfg import *
-import generate_config
+from Configuration import *
+from ServerCfg import *
+import GenerateConfig
 
-generate_config.generate_all('fields.json')
+GenerateConfig.generate_all('fields.json')
 
 cfg = load_config('config.json')
 
