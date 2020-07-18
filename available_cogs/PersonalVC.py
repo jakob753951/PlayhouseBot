@@ -44,7 +44,7 @@ class PersonalVC(commands.Cog):
 				manage_channels = True
 			)
 		}
-		
+
 		#get cate_personal_vc for the server
 		cat = await self.bot.fetch_channel(self.cfg.servers[member.guild.id].cate_personal_vc)
 

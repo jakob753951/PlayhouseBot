@@ -2,12 +2,11 @@ import json
 from ServerCfg import ServerCfg
 
 class Configuration:
-	def __init__(self, token = '', prefix = '.', description = '', name = '', initial_cogs = '', chan_forward_dm = '', guild_remind = '', role_remind = '', chan_remind = '', servers = {}):
+	def __init__(self, token = '', prefix = '.', description = '', name = '', chan_forward_dm = '', guild_remind = '', role_remind = '', chan_remind = '', servers = {}):
 		self.token = token
 		self.prefix = prefix
 		self.description = description
 		self.name = name
-		self.initial_cogs = initial_cogs
 		self.chan_forward_dm = chan_forward_dm
 		self.guild_remind = guild_remind
 		self.role_remind = role_remind
@@ -28,7 +27,6 @@ def load_config(filename):
 		jsonfile['prefix'],
 		jsonfile['description'],
 		jsonfile['name'],
-		jsonfile['initial_cogs'],
 		jsonfile['chan_forward_dm'],
 		jsonfile['guild_remind'],
 		jsonfile['role_remind'],

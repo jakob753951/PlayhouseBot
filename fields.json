@@ -1,4 +1,4 @@
 {
-    "general": ["token", "prefix", "description", "name"],
+    "general": ["token", "prefix", "description", "name", "chan_forward_dm", "guild_remind", "role_remind", "chan_remind"],
     "server": ["cate_personal_vc", "chan_personal_vc", "chan_message_log", "chan_member_log"]
 }

@@ -7,7 +7,7 @@ class Warning(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
 		self.cfg = load_config('config.json')
-	
+
 	@commands.command(name='warn')
 	async def warn(self, ctx, user: discord.User, *, reason = '[no reason given]'):
 		await user.send(f"You have been warned in {ctx.guild.name} for the following reason:\n{reason}")
